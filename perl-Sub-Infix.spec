@@ -5,7 +5,7 @@
 #
 Name     : perl-Sub-Infix
 Version  : 0.004
-Release  : 1
+Release  : 2
 URL      : https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Sub-Infix-0.004.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Sub-Infix-0.004.tar.gz
 Summary  : 'create a fake infix operator'
@@ -85,6 +85,7 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Sub-Infix
+cp %{_builddir}/Sub-Infix-%{version}/COPYRIGHT %{buildroot}/usr/share/package-licenses/perl-Sub-Infix/ffd490b89a71ab941f76c946b245af0002987498 || :
 cp %{_builddir}/Sub-Infix-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/perl-Sub-Infix/34f5e12514b91055de4b164a1f2327ef5c30ba53 || :
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
@@ -106,6 +107,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %files license
 %defattr(0644,root,root,0755)
 /usr/share/package-licenses/perl-Sub-Infix/34f5e12514b91055de4b164a1f2327ef5c30ba53
+/usr/share/package-licenses/perl-Sub-Infix/ffd490b89a71ab941f76c946b245af0002987498
 
 %files perl
 %defattr(-,root,root,-)
