@@ -7,7 +7,7 @@
 #
 Name     : perl-Sub-Infix
 Version  : 0.004
-Release  : 7
+Release  : 8
 URL      : https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Sub-Infix-0.004.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Sub-Infix-0.004.tar.gz
 Summary  : 'create a fake infix operator'
